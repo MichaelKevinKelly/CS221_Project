@@ -1,0 +1,25 @@
+---
+parameters:
+        ## Problem parameters
+        total_risk_bound: 0.5
+        total_horizon: 200
+        random_seed: 15
+
+        ## RAMCTS parameters
+        exploration_type: 'ucb' #'polynomial'
+        niter: 5000
+        mcts_horizon: 5 ##TODO: how is tree depth > this?
+        c: 1.
+        lmbda: 1.
+        random_seed: 15
+        k_s: 0.5
+        k_a: 0.5
+        alpha_s: 0.1
+        alpha_a: 0.1
+        p: 1.
+        discount: 1.
+        return_most_simulated: False
+        risk_aware: True
+        single_step_risk_aware: True
+        conservative_risk_prop: True
+...
